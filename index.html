@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;1,100&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" media="(max-width: 800px)" href="./assets/css/mobile.css" />
   <title>Frontend Mentor | Loopstudios landing page</title>
 
 </head>
@@ -19,14 +20,14 @@
   <header>
     <nav class="navbar">
       <div class="nav-brand">loopstudios</div>
-      <div class="nav-items">
+      <div class="nav-items" id="nav-items">
         <div class="nav-item ">About</div>
         <div class="nav-item">Careers</div>
         <div class="nav-item">Events</div>
         <div class="nav-item">Products</div>
         <div class="nav-item">Support</div>
       </div>
-      <div class="nav-burger"></div>
+      <div class="nav-burger" id="nav-burger"></div>
     </nav>
   </header>
 
@@ -39,7 +40,7 @@
   <section class="vr-section">
 
     <div class="vr-image-container">
-      <img src="./assets/images/desktop/image-interactive.jpg" alt="image-interactive"/>
+      <div class="vr-image"></div>
     </div>
     <div class="vr-text-container">
       <div class="vr-text">
@@ -134,4 +135,6 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 </body>
+
+<script src="./assets/js/main.js"></script>
 </html>

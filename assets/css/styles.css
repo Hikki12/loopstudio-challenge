@@ -35,18 +35,29 @@ header {
 
 .nav-brand {
     color: var(--white);
-    width: 50%;
+    width: 90%;
     font-size: 5.5vh;
     align-self: center;
 }
 .nav-items {
     /* margin-left: 20%; */
+    visibility: visible;
     margin-left: 20px;
     display: flex;
     width: 50%;
     gap: 20px;
     justify-content: flex-end;
     align-self: center;
+}
+
+.nav-burger {
+    background: url(../images/icon-hamburger.svg);
+    visibility: hidden;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    justify-content: flex-end;
 }
 
 .nav-item {
@@ -67,10 +78,10 @@ header {
 
 .hero { 
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(../images/desktop/image-hero.jpg);
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -20vh;;
+    margin-top: -26vh;;
     height: 120vh;
 
 }
@@ -84,11 +95,13 @@ header {
     top: 38vh;
     left: 12%;
     border: 2px solid white;
-    width: 90vh;
+    /* width: 90vh; */
+    max-width: 90vh;
+    min-width: 50vh;
     height: 40vh;
     color: white;
     text-transform: uppercase;
-    font-size: 10vh;
+    font-size: 9vh;
     font-weight: 100;
     padding: 5vh;
 }
@@ -103,49 +116,63 @@ header {
 
 .vr-image-container {
     /* border: 2px solid blue; */
-    width: 70%;
+    /* width: 70%; */
+    width: 100%;
+    height: 500px;
 }
 
-.vr-image-container img {
-    width: 100%;
+.vr-image {
+    background: url('../images/desktop/image-interactive.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
     height: 100%;
+
 }
 
 .vr-text-container {
     width: 20%;
+
 }
 
 .vr-text {
-    padding: 40%;
+    padding: 28%;
     background-color: white;
     position: relative;
-    top: 42%;
-    left: -75%;
-    width: 230%;
+    top: 52%;
+    left: -110%;
+    width: 200%;
     height: 50%;
-    
+    text-justify: justify;
+    /* border: 2px solid pink; */
 }
 
 .vr-text h2 {
     text-transform: uppercase;
-    font-size: 6vh;
+    font-size: 5vh;
     font-weight: 100;
     color: var(--dark);
+    text-align: center;
 }
 
 .vr-text p {
-    font-size: 2vh;
+    text-align: center;
+}
+
+.vr-text p {
+    font-size: 2.3vh;
     margin-top: 24px;
     line-height: 3vh;
     color: var(--dark-gray);
-    width: 66vh;
+    /* width: 66vh; */
     font-weight: 500;
 }
 
 
 /* Creations */
 .creations-section {
-    height: 190vh;
+    /* height: 190vh; */
+    min-height: 180vh;
     padding: 0 12%;    
 }
 
@@ -187,10 +214,13 @@ header {
     width: 100%;
     align-items: stretch;
     gap: 12px;
+    justify-content: center;
 }
 
 .creation {
     width: 24%;
+    /* min-width: 24%;
+    max-width: 26%; */
     height: 400px;
     margin-bottom: 0px;
     align-self: center;
